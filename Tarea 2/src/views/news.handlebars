@@ -1,0 +1,27 @@
+<nav class="navbar">
+  <div class="logo-nav">
+    <a href="/"><img src="/assets/img/logo.png" alt="Logo"></a>
+  </div>
+  <div class="search-bar">
+    <form action="/search" method="GET" id="search-form">
+      <input type="text" id="search-box-nav" name="query" value="{{ query }}" placeholder="Buscar noticias...">
+      <button type="submit" id="search-button">Buscar <i class="fas fa-search"></i></button>
+    </form>
+  </div>
+</nav>
+
+
+{{#if articles}}
+  {{#each articles}}
+    <article class="news-item">
+      <img src="{{urlToImage}}" alt="img">
+      <div class="text-content">
+        <h2><a href="{{url}}" target="_blank">{{title}}</a></h2>
+        <p><small>{{url}}</small></p>
+        <p>{{description}}</p>
+        <p><small>Escrito por: {{author}}</small></p>
+        <p><small>{{publishedAt}}</small></p>
+      </div>
+    </article>
+  {{/each}}
+{{/if}}
