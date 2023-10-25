@@ -20,6 +20,7 @@ import { UsersListComponent } from './pages/users/users-list/users-list.componen
 import { UserDataComponent } from './pages/users/user-data/user-data.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './modules/material/material.module';
+import { RegisterComponent } from './pages/register/register.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { MaterialModule } from './modules/material/material.module';
     EditGalleryComponent,
     GalleryDataComponent,
     UsersListComponent,
-    UserDataComponent
+    UserDataComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

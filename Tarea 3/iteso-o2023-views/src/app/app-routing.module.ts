@@ -9,10 +9,12 @@ import { GalleryListComponent } from './pages/gallery/gallery-list/gallery-list.
 import { CreateGalleryComponent } from './pages/gallery/create-gallery/create-gallery.component';
 import { GalleryDataComponent } from './pages/gallery/gallery-data/gallery-data.component';
 import { EditGalleryComponent } from './pages/gallery/edit-gallery/edit-gallery.component';
+import { RegisterComponent } from './pages/register/register.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'login', component: LoginComponent },
+  { path: 'register', component: RegisterComponent },
   { path: 'users', component: UsersComponent },
   { path: 'photos', component: GalleryComponent, children: [
     { path: '', component: GalleryListComponent }, 
