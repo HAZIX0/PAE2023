@@ -1,0 +1,17 @@
+<mat-form-field appearence="fill">
+    <mat-label>Buscar</mat-label>
+    <input matInput type="text">
+</mat-form-field>
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+    </tr>
+
+    <tr [ngClass]="{'active': currentUser.id === user.id}" *ngFor="let user of users" (click)="selectUser(user)">
+        <td>{{user.name}}</td>
+        <td>{{user.email}}</td>
+    </tr>
+    
+</table>
